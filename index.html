@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173d2b">
+  <title>Uli Bakar Tabur Serundeng | Rasa Tradisional Betawi</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="Uli Bakar Bang Par Par">
+      <span class="brand-mark"><img src="images/logo.png" alt="Logo Uli Bakar Bang Par Par"></span>
+      <span><strong>ULI BAKAR</strong><small>TABUR SERUNDENG</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="nav">
+      <a href="#beranda">Beranda</a><a href="#menu">Menu</a><a href="#tentang">Tentang</a>
+      <a href="#pesan" class="nav-cta">Pesan Sekarang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content">
+        <span class="eyebrow">Cita rasa khas Betawi</span>
+        <h1>Hangat, gurih,<br><em>bikin kangen.</em></h1>
+        <p>Uli bakar dengan taburan serundeng yang gurih, dibuat untuk menemani waktu santai kamu.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#menu">Lihat Menu <span>↗</span></a><a class="text-link" href="#tentang">Kenal lebih dekat</a></div>
+        <div class="hero-note"><span class="dot"></span> Dibuat segar saat dipesan</div>
+      </div>
+      <div class="hero-art">
+        <div class="sun"></div><div class="hero-sticker">RASA<br>TRADISIONAL<br><b>♡</b></div>
+        <div class="food-plate"><div class="food-piece piece-one"></div><div class="food-piece piece-two"></div><div class="food-piece piece-three"></div><div class="serundeng">✳ ✳ ✳ ✳ ✳</div></div>
+        <div class="art-caption">ULI BAKAR<br><span>+ SERUNDENG</span></div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>GURIH • HANGAT • TRADISIONAL • DIBUAT DENGAN HATI • </span><span>GURIH • HANGAT • TRADISIONAL • DIBUAT DENGAN HATI • </span></section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading"><div><span class="eyebrow">Dari dapur kami</span><h2>Menu favorit</h2></div><p>Pilih makanan favoritmu. Jumlah dan catatan pesanan bisa kamu atur sebelum dikirim ke WhatsApp.</p></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <section class="story section" id="tentang">
+      <div class="story-visual"><div class="story-circle">BETAWI<br><strong>ASLI</strong></div><img class="story-img" src="images/Suasana-Warung.jpg" alt="Suasana warung makan khas Betawi" loading="lazy"><span class="story-label">Dari tradisi, untuk semua generasi.</span></div>
+      <div class="story-copy"><span class="eyebrow">Cerita kami</span><h2>Sederhana, tapi penuh rasa.</h2><p>Uli bakar tabur serundeng Bang Par Par membawa camilan tradisional ke momen sehari-hari. Uli dibakar hingga harum, lalu disajikan dengan serundeng gurih yang menggugah selera.</p><p class="location">⌖ Bambu Apus, Jakarta Timur</p><a href="#pesan" class="button button-dark">Yuk, pesan sekarang ↗</a></div>
+    </section>
+
+    <section class="order-section section" id="pesan">
+      <div class="section-heading"><div><span class="eyebrow">Gampang dan praktis</span><h2>Pesan pun mudah</h2></div><p>Masukkan jumlah menu ke keranjang, isi data singkat, lalu lanjutkan pesanan melalui WhatsApp.</p></div>
+      <div class="order-layout">
+        <div class="order-form">
+          <label for="customerName">Nama pemesan</label><input id="customerName" type="text" placeholder="Nama kamu">
+          <label for="customerPhone">Nomor HP (opsional)</label><input id="customerPhone" type="tel" placeholder="08xxxxxxxxxx">
+          <label for="orderType">Jenis pesanan</label><select id="orderType"><option value="Ambil sendiri">Ambil sendiri</option><option value="pick ojol">Pick up Ojol (konfirmasi via WhatsApp)</option><option>Driver ojol by resto</option></select>
+          <label for="paymentMethod">Metode pembayaran</label><select id="paymentMethod"><option value="Tunai">Transfer (Konfirmasi dengan penjual)</option><option value="QRIS">QRIS (konfirmasi pembayaran dengan penjual)</option></select>
+          <label for="customerAddress">Alamat / catatan lokasi</label><textarea id="customerAddress" rows="3" placeholder="Isi alamat jika diantar Ojol by resto"></textarea>
+          <label for="orderNote">Catatan untuk dapur</label><textarea id="orderNote" rows="2" placeholder="Contoh: serundeng dipisah"></textarea>
+          <div class="form-actions"><button class="button button-primary" id="sendWhatsApp">Kirim pesanan ke WhatsApp <span>↗</span></button><button class="button button-outline" id="printReceipt">Cetak struk</button></div>
+          <p class="small-note">WhatsApp akan terbuka dengan pesan pesanan yang sudah disiapkan. Tekan <b>Kirim</b> di WhatsApp untuk mengirimnya.</p>
+        </div>
+        <aside class="cart-panel"><div class="cart-title"><h3>Keranjang kamu</h3><span id="itemCount">0 item</span></div><div id="cartItems" class="cart-items"><p class="empty-cart">Belum ada menu. Pilih menu favoritmu di atas.</p></div><div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div><button class="clear-cart" id="clearCart">Kosongkan keranjang</button></aside>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#beranda"><span class="brand-mark"><img src="images/logo.png" alt="Logo Uli Bakar Bang Par Par"></span><span><strong>ULI BAKAR</strong><small>BANG PAR PAR</small></span></a><p>Rasa tradisional yang selalu punya cerita.</p><span>© <span id="year"></span> Uli Bakar Bang Par Par</span></footer>
+
+  <div id="receipt" class="receipt" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
